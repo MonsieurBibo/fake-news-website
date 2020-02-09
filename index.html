@@ -1,38 +1,102 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
-		<title>TerraPlanus</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta charset="utf-8">
-		<link rel="shortcut icon" href="images/icon.png">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-	</head>
+		<link href='./styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<title>TerraPlanus.</title>
+		<script type="text/javascript" src="https://astralmeta.com/repository/js/fadeinfadeout.js"></script>
+		<script>
+			window.onload=function(){
+				var slogan = document.getElementById('slogan');
+				var spanTitle = document.getElementById('spanTitle');
 
+				/*spanTitle.addEventListener('mouseover', function(){
+					fadeOut(spanTitle,15);
+					setInterval(slogan.style.display = "block", 1500)
+					fadeIn(slogan,15);
+				})
+
+*/
+
+				var start = document.getElementById('start');
+				start.addEventListener('mouseover', function(){
+					start.style.margin = '0';
+					start.style.fontSize = '25px';
+					start.addEventListener('mouseout', function(){
+						start.style.margin = '16px 0';
+						start.style.fontSize = '16px';
+				});
+				});
+				
+				var mid = document.getElementById('mid');
+				mid.addEventListener('mouseover', function(){
+					mid.style.margin = '0';
+					mid.style.fontSize = '25px';
+					mid.addEventListener('mouseout', function(){
+						mid.style.margin = '16px 0';
+						mid.style.fontSize = '16px';
+					});
+				});
+				
+				var end = document.getElementById('end');
+				end.addEventListener('mouseover', function(){
+					end.style.margin = '0';
+					end.style.fontSize = '25px';
+						end.addEventListener('mouseout', function(){
+						end.style.margin = '16px 0';
+						end.style.fontSize = '16px';
+					});
+				});
+				
+
+			}
+		</script>
+	</head>
 	<body>
 		<header>
-			<div class="wrapper">
-				<h1>TerraPlanus.</h1>
+			<div class='wrapper'>
+				<h2 id='title'><span id="spanTitle">Terraplanus<span class='earth-point'>.</span></span><span id="slogan" style="font-size: 25px;">Les infos les plus plates<br>Au monde<span class='earth-point'>.</span></span></h2>
 				<nav>
-					<ul>
-						<li><a href="#news">Actualités</a></li>
-						<li><a href="#videos">Vidéos</a></li>
-						<li><a href="#contact">Contact</a></li>	
-					</ul>
-				</nav>	
+					<li>
+						<ul id="start" ><a href="#news"> Actualités </a></ul>
+						<ul id="mid"><a href="#videos"> Vidéos </a></ul>
+						<ul id="end"><a href="#contact"> Contact </a></ul>
+					</li>
+				</nav>
 			</div>
 		</header>
 
-		<section id="main-article">
-			<div class="wrapper">
-				<article>
-					<img src="images/purple_plane.jpg" id="purple_plane">
-					<h2 id="main-title">La Chine refusera tous les avions exceptés ceux de couleur violet.</h2>
-					<p id="main-text">En effet, le secrétaire général du Parti Républicain de Chine,  Ji Xipingpong, lors d'une conférence de presse, déclara que le pays interdira "l'accès au territoire aux avions autres que de couleur violet". Pour représenter les minorités chinoise.
-					</p>
-					<button id="main-button">Lire la suite</button>
-				</article>
-			</div>
-		</section>
+		<a href="./article1.html">		
+			<section id='main-article'>
+				<img src="images/purple_plane.jpg" id="purple_plane">
+				<div class='wrapper'>
+				
+					<h3>La Chine refuse tous les avions exceptés ceux de couleur violet.</h3>
+					<p>Le 31 février 2020, la Chine interdira l’atterrissage de tous les avions de couleur autre que violet...</p>
+				
+				</div>
+			</section>
+		</a>	
+		<div id="flexing">
+			<section id='article1' class="article">
+				<a href="article2.html">
+					<img id="misterv"src="images/misterv.gif">
+					<h4>Ça fait beaucoup là non ?!</h4>
+				</a>
+			</section>
+			<section id='article2' class="article">
+				<a href="article3.html">
+					<h4>L'autoroute pour tous</h4>
+				</a>
+			</section>
+			
+			<section id='article3' class="article">
+				<a href="article4.html">
+					<h4>2000 km/jour pour aller au travail</h4>
+				</a>
+			</section>
+		</div>
 	</body>
 </html>

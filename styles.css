@@ -1,0 +1,200 @@
+
+a{
+	text-decoration: none;
+	color: black;
+	padding: 0 10px;
+}
+
+header a:hover{
+	background-color: #f39c12;
+	border-radius:5px;
+}
+
+#slogan{
+	display: none;
+}
+
+.earth-point{
+	color: #f39c12;
+}
+
+.wrapper
+{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header h2
+{
+    float: left;
+    margin-top: 32px;
+	width:auto;
+}
+
+h2 {
+	font-family: 'Source Sans Pro', serif;
+	font-size: 50px;
+}
+
+
+#main-text {
+	font-size: 20px;
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 15%;
+}
+
+
+
+header {
+	height: 120px;
+}
+
+
+header nav
+{
+    float: right;   
+    margin-top: 32px;
+	list-style-type: none;
+}
+header nav ul li
+{
+	float:left;
+	flex-grow: 1;
+	
+}
+
+#mid{
+	flex-grow: 1;
+}
+
+header nav ul{
+	display: inline-flex;
+	font-family: 'Roboto Mono', monospace;
+}
+header nav ul li a
+{
+    
+    font-weight: bold;
+    margin-right: 20px;
+	text-decoration:none;
+	padding: 0 5px;
+}
+
+#purple_plane {
+	max-width:17%;
+	height:auto;
+	float: left;
+	position: absolute;
+	border-radius: 15px;
+	margin-top: 12px;
+	margin-left: 12px;
+}
+
+#main-article {
+	height: 200px;
+	background-color: #7f8c8d;
+	border-radius: 10px;
+}
+
+#main-article p{
+	text-align:center;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 25px;
+	font-family: 'Oswald', sans-serif;
+	word-spacing: 7px;
+}
+
+#main-article h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bolder;
+	padding-top:10px;
+	text-align: center;
+	font-size: 37px;
+	text-align:center;
+	
+}
+
+
+#main-title {
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+#main-button {
+	position: absolute;
+	display: block;
+	float: right;
+    width: 120px;
+    height: 50px;
+    background: #d35400;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    line-height: 50px;
+    text-align: center;
+    border-radius:  3px;
+}
+
+#news{}
+
+#videos{}
+
+#contact{}
+
+#flexing{
+	margin-top: 50px;
+	flex-direction: row;
+	display: flex;
+}
+
+.article {
+	text-align: center;
+	background-color: #95a5a6;
+	border-radius: 10px;
+	max-width: 500px;
+}
+
+.article h4{
+	padding-top: 35px;
+	font-family: 'Roboto Condensed', sans-serif;
+	
+}
+
+.article a{
+	display: table-cell;
+    vertical-align:middle;
+}
+
+#article1{
+	
+	order: 1;
+	flex-grow: 1;
+}
+
+#article2{
+	margin-left: 50px;
+	margin-right: 50px;
+	order: 2;
+	flex-grow: 1;
+}
+
+#article3{
+	order: 3;
+	
+	flex-grow: 1;
+}
+
+#misterv{
+	float: left;
+	max-width: 40%;
+	height: auto;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
